@@ -1,8 +1,4 @@
 
-
-
-
-
 import React, { useEffect, useState } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -20,19 +16,18 @@ import { CardActionArea } from '@mui/material';
 function Home() {
     const [trackImage, setTrackImage] = useState([])
     const [check, setCheck] = useState(true)
-    const [falseCheck, setFalseCheck] = useState(false)
+    
     
     useEffect(() =>{
         if(check) {
-        setTrackImage(["catering2.jpg", "catering5.jpg", "houseboat.jpg", "laundry.jpg", "mazuka-ago.jpg","marine-consumables.jpg","catering3.png"])
+        setTrackImage(["catering-y1.jpeg","catering-y.jpeg", "houseboat.jpg", "laundry.jpg", "mazuka-ago.jpg","marine-consumables.jpg","catering-y2.jpeg"])
     }
     
 
     },[])
 
-    // setTimeout(() =>{
-    //     window.location="/"
-    // },20000)
+    
+
   return (
     <div style={{width:"100%"}}>
         
@@ -80,7 +75,7 @@ function Home() {
         </div>
         
           <div className='ourservices'>
-            <h2 style={{textAlign:"center"}}>Check out our services below</h2>
+            <h2>Check out our services below</h2>
             <div className='ourservice-container'>
                 <div className='ourservice-div'>
                     <Card sx={{ maxWidth: 345 }}>
