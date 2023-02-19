@@ -218,13 +218,13 @@ img {
 @media screen and (max-width:600px) {
   .mazuka-header {
     flex-direction: column;
-    max-width: 60%;
+    max-width: 53%;
     margin-left: -60px;
   }
   
   .carousal {
    width: 100%;
-   max-width: 85%;
+   max-width: 80%;
    display: flex;
    flex-direction: column-reverse;
    padding-bottom: 10px;
@@ -247,7 +247,7 @@ img {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    max-width: 90%;
+    max-width: 98%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -282,9 +282,10 @@ img {
      }
   
      .policy {
-       max-width: 40%;
+       max-width: 35%;
        align-self: baseline;
        text-align: justify;
+       padding: 10px;
      }
 
   .mazuka-footer {
