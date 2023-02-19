@@ -11,6 +11,8 @@ import CardMedia from '@mui/material/CardMedia';
 //import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import background from '../photos/special-background2.jpeg';
+//import background2 from '../photos/special-background3.jpg'
 
 
 function Home() {
@@ -18,7 +20,7 @@ function Home() {
   return (
     <div style={{maxWidth:"100%"}}>
         
-            <div className='carousal'>
+            <div className='carousal' style={{ backgroundImage: `url(${background})`,backgroundRepeat:"repeat" }}>
                 <div className='description'>
                 <p>Mazuka Nigeria Limited is a Catering and Housekeeping company registered in Nigeria. Mazuka is also a leading support service company offering a broad range of services particularly marine logistics, chandelling, material sourcing, and procurement on request as well as supply of AGO and other marine equipment and consummables.</p>
             </div>
