@@ -72,16 +72,19 @@ footer {
 }
 
 .carousal-content {
-  max-width: 60%;
+  max-width: 50%;
   margin: 5px;
 }
 
 img {
   max-height: 250px;
+  height: auto;
+  width: 100%;
 }
 
 .caro-div {
   max-height: 499 !important;
+  max-width: 400px;
 }
 
 .caro-div>img {
@@ -97,43 +100,6 @@ img {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 600px){
-  .mazuka-header{
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width:600px){
-  .carousal {
-    display: block;
-    width: 100%;
-    padding-bottom: 10px;
-    
-  } 
-  .carousal-content {
-    width: 70%;
-    max-width: 70%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10px;
-  }
-  .description {
-    width: 80% !important;
-    padding: 5px;
-    max-width: 70% !important;
-  }
-  .caro-div img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-}
-
-
-
 .ourservice-container {
   display: flex;
   flex-wrap: wrap;
@@ -146,16 +112,17 @@ img {
   color: #fff;
   padding: 10px;
   margin-top: 0;
+  text-align: center;
 }
 .ourservice-container > div {
-  width: 270px;
-  max-width: 250px;
+  width: 300px;
+  max-width: 400px;
   margin: 5px;
   padding: 5px;
 }
 
 .ourservice-container > div > img {
-  width: 200px;
+  width: 100%;
   object-fit: contain;
 }
 
@@ -163,7 +130,7 @@ img {
   text-align: center;
 }
 
-
+/* experience section */
 
 .experience-container {
   display: flex;
@@ -175,6 +142,16 @@ img {
 
 .experience {
   max-width: 50%;
+}
+
+.experience > h2 {
+  text-align: center;
+}
+
+.experience > p {
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 14px;
 }
 
 .clients {
@@ -203,21 +180,7 @@ img {
   font-size: 14px;
 }
 
-@media screen and (max-width:600px) {
-  .ourservice-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .ourservices > h2 {
-    text-align: left;
-    font-size: 25px;
-    padding-left: 30px;
-  }
 
-  
-}
 
 
 .mazuka-footer {
@@ -252,28 +215,32 @@ img {
   font-size: 13px;
 }
 
-
-
 @media screen and (max-width:600px) {
   .mazuka-header {
     flex-direction: column;
     max-width: 60%;
+    margin-left: -60px;
   }
+  
   .carousal {
    width: 100%;
-   max-width: 100%;
+   max-width: 85%;
    display: flex;
    flex-direction: column-reverse;
+   padding-bottom: 10px;
   }
-  .description {
-    width: 90%;
-    max-width: 80%;
-   margin-bottom: 10px;
-  }
-  .carousal-content {
-  
-    margin-left: 0px;
 
+    .carousal-content {
+      width: 90% !important;
+      max-width: 50% !important;
+      margin-top: 10px;
+      align-self: baseline;
+      margin-left: 5px !important;
+    }
+
+  .description {
+    max-width: 48%;
+   margin-bottom: 10px;
   }
 
   .ourservice-container {
@@ -285,18 +252,46 @@ img {
     margin-left: auto;
   }
 
+    .ourservices>h2 {
+      text-align: left;
+      font-size: 25px;
+      padding-left: 30px;
+      font-size: 20px;
+    }
   .experience-container {
     display: flex;
     flex-direction: column;
   }
 
+     .experience {
+       max-width: 95%;
+     }
+  
+     .experience>h2 {
+       text-align: left;
+       margin-left: 50px;
+     }
+  
+     .experience>p {
+       max-width: 40%;
+       text-align: left;
+     }
+  
+     .clients {
+       width: 45%;
+     }
+  
+     .policy {
+       max-width: 40%;
+       align-self: baseline;
+       text-align: justify;
+     }
+
   .mazuka-footer {
    display: flex;
    flex-direction: column;
-   align-items: center;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+   align-self: baseline;
+    padding-bottom: 50px;
   }
 
   .office {
@@ -307,7 +302,6 @@ img {
 
   .contact {
     max-width: 80%;
-    align-self:self-start;
-    margin-left: 80px;
+    align-self:baseline;
   }
 } 

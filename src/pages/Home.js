@@ -1,70 +1,57 @@
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
 
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
+//import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
+//import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
 
 function Home() {
-    const [trackImage, setTrackImage] = useState([])
-    const [check, setCheck] = useState(true)
     
-    
-    useEffect(() =>{
-        if(check) {
-        setTrackImage(["catering-y1.jpeg","catering-y.jpeg", "houseboat.jpg", "laundry.jpg", "mazuka-ago.jpg","marine-consumables.jpg","catering-y2.jpeg"])
-    }
-    
-
-    },[])
-
-    
-
   return (
-    <div style={{width:"100%"}}>
+    <div style={{maxWidth:"100%"}}>
         
             <div className='carousal'>
                 <div className='description'>
                 <p>Mazuka Nigeria Limited is a Catering and Housekeeping company registered in Nigeria. Mazuka is also a leading support service company offering a broad range of services particularly marine logistics, chandelling, material sourcing, and procurement on request as well as supply of AGO and other marine equipment and consummables.</p>
             </div>
             <div className="carousal-content">
-                <Carousel autoPlay>
+                <Carousel infiniteLoop useKeyboardArrows autoPlay>
             
             <div className='caro-div'>
-                    <img src={`/images/${trackImage[0]}`} alt=""/>
+                    <img src="/images/catering-y1.jpeg" alt=""/>
                     <p>Catering Services</p>
                 </div>
                 <div className='caro-div'>
-                    <img src={`/images/${trackImage[1]}`} alt=""/>
+                    <img src="/images/catering-y.jpeg" alt=""/>
                     <p>Catering Services</p>
                 </div>
                 <div className='caro-div'>
-                    <img src={`/images/${trackImage[2]}`} alt=""/>
+                    <img src="/images/houseboat.jpg" alt=""/>
                     <p>House boat leasing/support services</p>
                 </div>
                 
                 <div className='caro-div'>
-                    <img src={`/images/${trackImage[3]}`} alt=""/>
+                    <img src="/images/laundry.jpg" alt=""/>
                     <p>House keeping Services</p>
                 </div>
                 <div className='caro-div'>
-                    <img src={`/images/${trackImage[4]}`} alt=""/>
+                    <img src="/images/mazuka-ago.jpg" alt=""/>
                     <p>Ago supplies</p>
                 </div>
                 <div className='caro-div'>
-                    <img src={`/images/${trackImage[5]}`} alt=""/>
+                    <img src="/images/marine-consumables.jpg" alt=""/>
                     <p>Marine consumable</p>
                 </div>
                 <div className='caro-div'>
-                    <img src={`/images/${trackImage[6]}`} alt=""/>
+                    <img src="/images/catering-y2.jpeg" alt=""/>
                     <p>Catering Services</p>
                 </div>
                 
@@ -134,7 +121,7 @@ function Home() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
-           chandelling
+           Chandelling
           </Typography>
           <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
            Our clients expressed satisfaction with our services including but not limited to Wrightlinks Logistic Service Limited, Ocean Marine and Tankers Nigeria Limited, Dreging International Service (Nig,) and World Carrier Corporation. 
@@ -199,8 +186,8 @@ function Home() {
         {/* experience will come in here */}
         <div className='experience-container'>
             <div className='experience'>
-            <h2 style={{textAlign:"center"}}>Our Experince</h2>
-            <p style={{textAlign:"center", fontSize:"14px", color:'#4a4a4a'}}>We have gained vast and unquantifiable experience in the industry. We are still in the business of satisfying our clients. Some of our clients include:</p>
+            <h2>Our Experince</h2>
+            <p>We have gained vast and unquantifiable experience in the industry. We are still in the business of satisfying our clients. Some of our clients include:</p>
             <div className='clients'>
                 <div>
                     <img src="/images/chevron1.png" alt=""/>
