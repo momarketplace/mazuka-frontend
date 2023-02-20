@@ -11,7 +11,7 @@ import CardMedia from '@mui/material/CardMedia';
 //import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import background from '../photos/special-background2.jpeg';
+import background from '../photos/special-background4.jpg';
 //import background2 from '../photos/special-background3.jpg'
 
 
