@@ -224,8 +224,7 @@ img {
 @media screen and (max-width:600px) {
   .mazuka-header {
     flex-direction: column;
-    max-width: 53%;
-    margin-left: -60px;
+    max-width: fit-content;
   }
   
   .carousal {

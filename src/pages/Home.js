@@ -2,13 +2,14 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { Link } from 'react-router-dom'
 
 
 import Card from '@mui/material/Card';
 //import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-//import Button from '@mui/material/Button';
+import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import background from '../photos/special-background4.jpg';
@@ -27,35 +28,51 @@ function Home() {
             <div className="carousal-content">
                 <Carousel infiniteLoop useKeyboardArrows autoPlay>
             
-            <div className='caro-div'>
+            <Link to="/catering" style={{textDecoration:"none"}}>
+              <div className='caro-div'>
                     <img src="/images/catering-y1.jpeg" alt=""/>
+                    
                     <p>Catering Services</p>
                 </div>
+            </Link>
+             <Link to="/catering" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
-                    <img src="/images/catering-y.jpeg" alt=""/>
+                   
+                     <img src="/images/catering-y.jpeg" alt=""/>
                     <p>Catering Services</p>
                 </div>
+              </Link>
+               <Link to="#" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
                     <img src="/images/houseboat.jpg" alt=""/>
                     <p>House boat leasing/support services</p>
                 </div>
-                
+              </Link>
+              
+               <Link to="#" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
                     <img src="/images/laundry.jpg" alt=""/>
                     <p>House keeping Services</p>
                 </div>
+                </Link>
+                <Link to="#" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
                     <img src="/images/mazuka-ago.jpg" alt=""/>
                     <p>Ago supplies</p>
                 </div>
+                </Link>
+                <Link to="#" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
                     <img src="/images/marine-consumables.jpg" alt=""/>
                     <p>Marine consumable</p>
                 </div>
+                </Link>
+                <Link to="/catering" style={{textDecoration:"none"}}>
                 <div className='caro-div'>
-                    <img src="/images/catering-y2.jpeg" alt=""/>
+                      <img src="/images/catering-y2.jpeg" alt=""/>
                     <p>Catering Services</p>
                 </div>
+                </Link>
                 
             </Carousel>
             </div>
@@ -69,20 +86,28 @@ function Home() {
                 <div className='ourservice-div'>
                     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
+        <Link to="/catering">
+          <CardMedia
           component="img"
           height="140"
           image="/images/catering1.jpeg"
           alt=""
         />
+        </Link>
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
+            <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
             Catering
           </Typography>
+          
           <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
             Our clients do not run out of groceries as we make provisions for between two to four weeks window for an uninterrupted operations in the event of disruption in supply runs.
           </Typography>
+          
+          <Link to ="/catering" style={{textDecoration:"none"}}>
+            <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>
+            </Link>
         </CardContent>
+        
       </CardActionArea>
     </Card>
                     {/* <h3>Catering</h3>
@@ -92,12 +117,14 @@ function Home() {
                 <div>
                     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
+        <Link to="#">
+          <CardMedia
           component="img"
           height="140"
           image="/images/housekeeping.jpg"
           alt=""
         />
+        </Link>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
            Housekeeping
@@ -105,6 +132,9 @@ function Home() {
           <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
             Our team is well positioned to cater for both national and expatriate workers to accomodate all shades of nationalities to make them feel at home while at work.
           </Typography>
+          <Link to ="#" style={{textDecoration:"none"}}>
+            <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>
+            </Link>
         </CardContent>
       </CardActionArea>
     </Card>
@@ -115,12 +145,14 @@ function Home() {
                 <div>
                     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
+        <Link to ="#">
+          <CardMedia
           component="img"
           height="140"
           image="/images/ship-chandlers.jpg"
           alt=""
         />
+        </Link>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
            Chandelling
@@ -129,6 +161,9 @@ function Home() {
            Our clients expressed satisfaction with our services including but not limited to Wrightlinks Logistic Service Limited, Ocean Marine and Tankers Nigeria Limited, Dreging International Service (Nig,) and World Carrier Corporation. 
 
           </Typography>
+          <Link to ="#" style={{textDecoration:"none"}}>
+            <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>
+            </Link>
         </CardContent>
       </CardActionArea>
       </Card>
@@ -140,12 +175,14 @@ function Home() {
                 <div>
                     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
+        <Link to ="#">
+          <CardMedia
           component="img"
           height="140"
           image="/images/marine-support.jpg"
           alt=""
         />
+        </Link>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
            Marine Support Service
@@ -153,6 +190,9 @@ function Home() {
           <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
             On request, we source and lease to our clients House boats, Sport barge, security boats etc
           </Typography>
+          <Link to ="#" style={{textDecoration:"none"}}>
+            <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>
+            </Link>
         </CardContent>
       </CardActionArea>
       </Card>
@@ -162,12 +202,14 @@ function Home() {
                 </div>
                 
         <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
+      <Link to="#">
+        <CardMedia
         component="img"
         alt="AGO"
         height="140"
         image="/images/mazuka-ago.jpg"
       />
+      </Link>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
           AGO (Diesel) supply
@@ -175,6 +217,9 @@ function Home() {
         <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
           We supply AGO to our numerous clients whenever they are needed.
         </Typography>
+        <Link to ="#" style={{textDecoration:"none"}}>
+            <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>
+            </Link>
       </CardContent>
       {/* <CardActions>
         <Button size="small">Share</Button>

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
+import Catering from './pages/Catering';
 
 
 function App() {
@@ -11,12 +12,13 @@ function App() {
     <div className='grid-container'>
       <header>
         <div className='mazuka-header'>
-        <div><img style={{width:"100px", height:"100px", borderRadius:"10px"}} src="/images/logo3.jpg" alt="" /></div>          
+        <div><img style={{width:"80px", height:"80px", borderRadius:"10px"}} src="/images/logo3.jpg" alt="" /></div>          
         <div style={{fontSize:"25px", fontWeight:1000, color:"#191970"}}>MAZUKA NIGERIA LIMITED</div>
         </div>
       </header>
       <main>
          <Routes>
+          <Route path="/catering"  element={<Catering />}></Route>
             <Route path="/" index element={<Home />}></Route>
          </Routes>
       </main>
