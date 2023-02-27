@@ -96,7 +96,7 @@ function Home() {
         </Link>
         <CardContent>
             <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center"}}>
-            Catering
+            Catering/Housekeeping
           </Typography>
           
           <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
@@ -114,7 +114,7 @@ function Home() {
                     <img src="/images/catering1.jpeg" alt="" />
                     <p>Our clients do not run out of groceries as we make provisions for between two to four weeks window for an uninterrupted operations in the event of disruption in supply runs.</p> */}
                 </div>
-                <div>
+                {/* <div>
                     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <Link to="#">
@@ -138,10 +138,7 @@ function Home() {
         </CardContent>
       </CardActionArea>
     </Card>
-                    {/* <h3>Housekeeping</h3>
-                    <img src="/images/housekeeping.jpg" alt="" />
-                    <p>Our team is well positioned to cater for both national and expatriate workers to accomodate all shades of nationalities to make them feel at home while at work.</p> */}
-                </div>
+                </div> */}
                 <div>
                     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -161,9 +158,9 @@ function Home() {
            Our clients expressed satisfaction with our services including but not limited to Wrightlinks Logistic Service Limited, Ocean Marine and Tankers Nigeria Limited, Dreging International Service (Nig,) and World Carrier Corporation. 
 
           </Typography>
-          <Link to ="#" style={{textDecoration:"none"}}>
+          {/* <Link to ="#" style={{textDecoration:"none"}}>
             <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>
-            </Link>
+            </Link> */}
         </CardContent>
       </CardActionArea>
       </Card>
@@ -190,9 +187,9 @@ function Home() {
           <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
             On request, we source and lease to our clients House boats, Sport barge, security boats etc
           </Typography>
-          <Link to ="#" style={{textDecoration:"none"}}>
+          {/* <Link to ="#" style={{textDecoration:"none"}}>
             <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>
-            </Link>
+            </Link> */}
         </CardContent>
       </CardActionArea>
       </Card>
@@ -217,9 +214,9 @@ function Home() {
         <Typography variant="body2" color="text.secondary" sx={{fontSize:"14px", color:"#4a4a4a", textAlign:"justify"}}>
           We supply AGO to our numerous clients whenever they are needed.
         </Typography>
-        <Link to ="#" style={{textDecoration:"none"}}>
+        {/* <Link to ="#" style={{textDecoration:"none"}}>
             <Button variant='contained' color="primary" size="small" style={{marginTop:'5px', marginLeft:"60px"}}>Learn More</Button>
-            </Link>
+            </Link> */}
       </CardContent>
       {/* <CardActions>
         <Button size="small">Share</Button>
