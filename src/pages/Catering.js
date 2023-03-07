@@ -14,9 +14,9 @@ function Catering() {
   return (
     <div>
         <div className='catering'>
-            <h3 className='catering-item'>Mazuka Catering and Housekeeping Service</h3>
+            <h2 className='catering-item'>Mazuka Catering Service</h2>
         <p className='catering-item'>Do not worry about food for your team. Mazuka is here for you.</p>
-        <div className='catering-image-container'>
+        {/* <div className='catering-image-container'>
             <div>
                 <img src="/images/catering/catering1.jpg" alt="" />
             </div>
@@ -39,10 +39,8 @@ function Catering() {
                 <img src="/images/catering/yam4.jpg" alt="" />
             </div> 
             <div><img src="/images/catering/catering2.jpg" alt="" /></div>
-            {/* <div>
-                 <img src="/images/catering/egg3.jpg" alt="" />
-            </div> */}
-        </div>
+           
+        </div> */}
         </div>
 
         {/* mazuka estimator */}

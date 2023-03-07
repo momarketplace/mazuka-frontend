@@ -4,9 +4,14 @@
     padding-bottom: 50px;
 }
 
+.catering > h2 {
+    padding-top: 50px;
+    text-shadow: 2px 2px #FF0000;
+}
+
+
 .catering-item {
     color: #fff;
-    padding: 10px;
     text-align: center;
 }
 
